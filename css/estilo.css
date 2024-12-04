@@ -1,0 +1,186 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ededed;
+}
+
+/* Início estilização do cabeçalho */
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.flex-container-cab{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img{
+    width: 266px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+nav{ /*Define as formatações da barra de navegação*/
+    padding: 0;
+    margin: 0;
+    text-align-last: center;
+}
+
+ul{
+    list-style: none; /*Não lista (bolinhas) os tópicos*/
+}
+
+ul li{
+    display: inline-flex; /*Organiza os "li" em linha*/
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px; /*Distancia os elementos*/
+    color: #126239; /*Cor do texto*/
+    text-decoration: none; /*Tira a barra de baixo das palavras*/
+    text-align: center; /*Alinha o texto ao centro*/
+    font-size: 20px; /*Tamanho das letras*/
+}
+
+ul li a:hover{ /*Quando o mouse passa pelo conteúdo e outros*/
+    color: #ffffff;
+    background-color: #55911a;
+    border-radius: 5px;
+}
+
+.selecionado{
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, #56911a49, #ffff);
+}
+/* Fim da estilização do cabeçalho */
+
+/* Início da estilização do arquivo sobre.html */
+.main_sobre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.texto_sobre{
+    padding: 10px 300px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-indent: 50px;
+}
+/* Fim da estilização do arquivo sobre.html */
+
+/* Início da estilização do arquivo index.html */
+.main_index{
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #55911a;
+}
+
+.flex-container_resumo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.total_receitas{
+    color: green;
+}
+.total_despesas{
+    color: red;
+}
+
+.resumo_financeiro{
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+.form_cadastro{
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+.lista_transacoes{
+    background-color: #ffffff;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+form {
+    display: grid;
+    grid-gap: 1em;
+}
+
+form input, form select, form button {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+button {
+    background-color: #55911a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4b7e17;
+}
+
+#resumo p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+#transacoes {
+    list-style: none;
+    padding: 0;
+}
+
+#transacoes li {
+    background: #f3f3f3;
+    margin: 0.5em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#transacoes li .actions button {
+    margin-left: 0.5em;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer; /*Deixa a seta do mouse uma mão*/
+}
+
+#transacoes li .actions button.edit{
+    background-color: #55911a;
+}
+
+#transacoes li .actions button:hover{
+    opacity: 0.9;
+}
+/* Fim da estilização do arquivo index.html */
+

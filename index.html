@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Finances</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header><!-- Início do cabeçalho -->
+        <div class="flex-container-cab">
+
+            <div id="logo"> <!--Início do logo-->
+                <picture>
+                    <img src="img/logo_WebFinances.png" alt="">
+                </picture>
+            </div><!--Fim do logo-->
+
+            <nav><!--Barra de navegação-->
+                <ul>
+                    <li class="selecionado"><a href="index.html">Visão geral</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav><!--Fim da barra de navegação-->
+        </div>
+    </header><!-- Fim do cabeçalho -->
+
+    <main class="main_index"> <!-- Início do conteúdo principal -->
+        <!-- Resumo Financeiro -->
+        <section id="resumo" class="resumo_financeiro">
+            <h2>Resumo Financeiro</h2>
+            <div class="flex-container_resumo">
+                <p><b>Total de Receitas:</b> <br><span id="total-receitas" class="total_receitas">R$ 0,00</span></p>
+                <p><b>Total de Despesas:</b> <br><span id="total-despesas" class="total_despesas"> R$ 0,00</span></p>
+                <p><b>Saldo Final:</b> <br><u><span id="saldo-final">R$ 0,00</span></u></p>
+            </div>
+        </section>
+
+        <!-- Formulário de Cadastro -->
+        <section id="cadastro" class="form_cadastro">
+            <h2>Cadastro Financeiro</h2>
+            <form id="finance-form">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" required placeholder="Ex.: Conta de luz">
+
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Receita">Receita</option>
+                    <option value="Despesa">Despesa</option>
+                </select>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" step="0.01" required placeholder="Ex.: 92,50">
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <!-- Lista de Transações -->
+        <section id="lista" class="lista_transacoes">
+            <h2>Listagem Financeira</h2>
+            <ul id="transacoes"></ul>
+        </section>
+    </main> <!-- Fim do conteúdo principal -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
